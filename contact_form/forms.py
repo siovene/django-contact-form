@@ -54,6 +54,6 @@ class BasicContactForm(ContactForm):
     """
     A very basic contact form you can use out of the box if you wish.
     """
-    name = forms.CharField(label=_(u'Your name'), max_length=100)
-    email = forms.EmailField(label=_(u'Your email address'), max_length=200)
-    body = forms.CharField(label=_(u'Your message'), widget=forms.Textarea())
+    name = forms.CharField(label=_(u'Name'), max_length=100)
+    email = forms.EmailField(label=_(u'Email'), max_length=200)
+    body = forms.CharField(label=_(u'Body'), widget=forms.Textarea())
